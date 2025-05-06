@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,execution=0;
+	float performance;
+	printf("enter the instruction count:");
+	scanf("%d",&a);
+	printf("enter the cpi:");
+	scanf("%d",&b);
+	printf("enter the no of clock cycles:");
+	scanf("%d",&c);
+	execution=a*b*c;
+	performance=1/execution;
+	printf("performance of a  instrument is %.2f",performance);
+	return 0;	
+}
